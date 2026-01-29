@@ -1,0 +1,10 @@
+{
+  "id": "butzy-json-formatter",
+  "name": "Butzy JSON Formatter",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Minify and prettify JSON",
+  "author": "Butzy",
+  "authorUrl": "",
+  "isDesktopOnly": false
+}
