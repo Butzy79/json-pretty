@@ -25,7 +25,8 @@ module.exports = class JsonFormatter extends require('obsidian').Plugin {
         .replace(/'/g, '"')
         .replace(/\bTrue\b/g, 'true')
         .replace(/\bFalse\b/g, 'false')
-        .replace(/\bNone\b/g, 'null');
+        .replace(/\bNone\b/g, 'null')
+        .replace(/\b(datetime\.datetime\([^\)]*\))\b/g, '"$1"');
     try {
         const obj = JSON.parse(text);
         const formatted = pretty ? JSON.stringify(obj, null, "\t") : JSON.stringify(obj);
